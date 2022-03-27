@@ -289,6 +289,12 @@ export default {
           corp: "NAVER LABS",
         },
         {
+          title: "[NAVER Cloud] IAM, SSO 서비스 개발",
+          tag: ["경력", "Cloud", "Software Development"],
+          date: "2022.03.01~2022.03.28",
+          corp: "NAVER LABS",
+        },
+        {
           title: "[NAVER Cloud] 빅데이터 분석 플랫폼 엔지니어",
           tag: ["경력", "Cloud", "Software Development"],
           date: "2022.03.01~2022.03.28",
@@ -326,6 +332,12 @@ export default {
       intern: [
         {
           title: "[NAVER Cloud] 빅데이터 분석 플랫폼 엔지니어",
+          tag: ["경력", "Cloud", "Software Development"],
+          date: "2022.03.01~2022.03.28",
+          corp: "NAVER LABS",
+        },
+        {
+          title: "[NAVER Cloud] IAM, SSO 서비스 개발",
           tag: ["경력", "Cloud", "Software Development"],
           date: "2022.03.01~2022.03.28",
           corp: "NAVER LABS",

@@ -48,7 +48,7 @@
             v-for="(item, index) in careerList"
             :key="`career-${index}`"
           >
-            <router-link to="/home/recruit">
+            <router-link :to="item.link">
               <em class="career">{{ item.career }}</em>
               <span class="count">{{ item.count }}</span>
             </router-link>
@@ -124,18 +124,22 @@ export default {
         {
           career: "개발",
           count: "63",
+          link: "/home/recruit",
         },
         {
           career: "설계(디자인)",
           count: "5",
+          link: "#",
         },
         {
           career: "콘텐츠&서비스",
           count: "59",
+          link: "#",
         },
         {
           career: "경영지원",
           count: "13",
+          link: "#",
         },
       ],
       cultureList: [
