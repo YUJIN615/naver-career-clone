@@ -92,8 +92,8 @@
 </template>
 
 <script>
-import { Swiper } from "swiper/vue/swiper.js";
-import { SwiperSlide } from "swiper/vue/swiper-slide.js";
+import { Swiper } from "swiper/vue/swiper";
+import { SwiperSlide } from "swiper/vue/swiper-slide";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/modules/navigation/navigation.min.css";

@@ -24,3 +24,13 @@ em {
   height: 100%;
   margin: 0 auto;
 }
+.blind {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}

@@ -91,7 +91,12 @@
             <option value="NAVER">NAVER</option>
             <option value="LABS">LABS</option>
           </select>
-          <input type="text" placeholder="search jobs" class="search" />
+          <div class="search-wrap">
+            <input type="search" placeholder="Search jobs" class="search" />
+            <button type="submit" class="search-btn">
+              <span class="blind">검색하기</span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="career-area">
@@ -218,8 +223,8 @@
 </template>
 
 <script>
-import { Swiper } from "swiper/vue/swiper.js";
-import { SwiperSlide } from "swiper/vue/swiper-slide.js";
+import { Swiper } from "swiper/vue/swiper";
+import { SwiperSlide } from "swiper/vue/swiper-slide";
 import { Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/modules/navigation/navigation.min.css";
@@ -521,11 +526,33 @@ export default {
         font-size: 13px;
         color: #bbb;
       }
-      .search {
-        width: 180px;
-        height: 35px;
-        border: 1px solid #ccc;
-        padding: 0 10px;
+      .search-wrap {
+        position: relative;
+        .search {
+          width: 180px;
+          height: 35px;
+          border: 1px solid #ccc;
+          padding: 0 10px;
+          &::placeholder {
+            color: #bbb;
+          }
+          &:focus::placeholder {
+            color: transparent;
+          }
+        }
+        .search-btn {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          width: 18px;
+          height: 18px;
+          border: 0;
+          background: transparent url("../assets/img/icon-search.svg") no-repeat
+            center / contain;
+          opacity: 0.3;
+          cursor: pointer;
+        }
       }
     }
   }
